@@ -1,0 +1,111 @@
+/* Media Queries */
+
+// Screen Width <= 1280px
+@media (max-width: 1280px) {
+
+  .user-profile {
+    width: 490px;
+  }
+
+  .user-paragraph {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    width: 130px;
+  }
+
+  .item-link {
+    font-size: 12px;
+  }
+}
+
+// Screen Width <= 768px
+@media (max-width: 768px) {
+
+  .user-profile {
+    width: 420px;
+  }
+
+  .user-title {
+    text-align: center;
+  }
+
+  .user-paragraph {
+    font-size: 14px;
+  }
+
+  .user-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .item-link {
+    font-size: 12px;
+  }
+
+  // .l-phone:after {
+  //   content: '+7 (925) 135-96-15';
+  // }
+
+  .user-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+// Screen Width <= 576px
+@media (max-width: 576px) {
+  .user {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-bottom: 20px
+  }
+
+  .user-profile {
+    max-width: 300px;
+  }
+
+  .user-title {
+    text-align: center;
+  }
+
+  .user-paragraph {
+    padding: 15px 15px;
+  }
+
+  .user-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  .item-link {
+    font-size: 14px;
+  }
+
+  // .l-phone:after {
+  //   content: '+7 (925) 135-96-15';
+  // }
+
+  .user-note {
+    text-align: center;
+  }
+
+  .user-avatar {
+    margin: 20px auto;
+  }
+}
