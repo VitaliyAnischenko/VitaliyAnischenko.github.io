@@ -59,6 +59,7 @@ body {
 
 .user-paragraph {
   padding: 20px 0;
+  font-size: 18px;
 }
 
 .user-nav {
@@ -125,6 +126,38 @@ body {
   font-size: 12px;
   font-family: serif;
   padding: 10px 0;
+}
+
+.user-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.language-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 190px;
+  font-size: 16px;
+}
+
+.language-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.language-item {
+  margin: 0 5px;
 }
 
 .messenger-link {
@@ -199,25 +232,41 @@ body {
     width: 490px;
   }
   .user-paragraph {
-    font-size: 14px;
+    font-size: 16px;
   }
   .nav-item {
-    width: 130px;
+    width: 150px;
   }
   .item-link {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
+  .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
   .user-profile {
     width: 420px;
   }
   .user-title {
     text-align: center;
+    padding: 0 20px;
+    word-wrap: break-word;
   }
   .user-paragraph {
     font-size: 14px;
+    padding: 20px;
   }
   .user-nav {
     display: -webkit-box;
@@ -236,7 +285,10 @@ body {
     margin: 10px 0;
   }
   .item-link {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .user-avatar {
+    margin: 20px auto;
   }
   .user-img {
     width: 220px;
@@ -245,19 +297,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
   .user-profile {
     max-width: 300px;
   }
@@ -283,14 +322,16 @@ body {
     width: 300px;
     margin: 10px 0;
   }
-  .item-link {
-    font-size: 14px;
-  }
   .user-note {
     text-align: center;
   }
-  .user-avatar {
-    margin: 20px auto;
+  .user-language, .language-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
