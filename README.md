@@ -4,4 +4,4 @@
 
 (p) Портфолио:
 
-1. [Honda rank](https://vitaliyanischenko.github.io/p/honda-rank)
+1. [Honda Sklad](https://vitaliyanischenko.github.io/p/honda-sklad)
